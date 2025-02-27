@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(242, 210, 189);
+    overflow: hidden; /* Hide scrollbars */
+}
+
+button{
+    position: absolute;
+    display: block;
+    background: transparent;
+    border: solid;
+    z-index: 1;
+    border: none;
+}
+
+.imgbox{
+    display: grid;
+    height: 100%;
+    position: relative;
+}
+
+.center-fit{
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+#secondImg{
+    z-index: 1;
+    position: absolute;
+}
+
+#closeBtn, #backBtn, #homeBtn{
+    display: none;
+}
+
+#back-modal{
+    display: none;
+    position: fixed; /* Use fixed positioning to keep it centered relative to the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal by shifting it back by 50% of its width and height */
+    background-color: #47ccf5; /* Pinkish red background */
+    font-size: larger;
+    color: #000000; /* Pastel gold text color */
+    border-radius: 8px; /* Rounded corners for a better look */
+    padding: 25px; /* Add padding inside the modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better depth */
+    z-index: 1000; /* Ensure the modal appears on top of other elements */
+    font-weight: 500;
+    text-align: center;
+}
+
+#home-modal{
+    display: none;
+    position: fixed; /* Use fixed positioning to keep it centered relative to the viewport */
+    top: 50%;
+    left: 50%;
+    width: 29%;
+    transform: translate(-50%, -50%); /* Center the modal by shifting it back by 50% of its width and height */
+    background-color: #47ccf5; /* Pinkish red background */
+    font-size: larger;
+    color: #000000; /* Pastel gold text color */
+    border-radius: 8px; /* Rounded corners for a better look */
+    padding: 25px; /* Add padding inside the modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for better depth */
+    z-index: 1000; /* Ensure the modal appears on top of other elements */
+    font-weight: 500;
+    text-align: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer; /* Make it clear that it's clickable */
+    color: #000000; /* Pastel gold close button */
+    font-weight: bolder;
+}
+
+.confirm-button {
+    background-color: #36d350; /* A softer shade of pinkish red */
+    border: none;
+    color: #000000; /* Pastel gold text */
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 0 0 125px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background-color: #47bd5b; /* Slightly darker pinkish red on hover */
+}
+
+#confirm-home{
+    margin: 0 0 0 172px;
+}
+
+#buzzerBtn{
+    z-index: 0;
+}
